@@ -1,16 +1,23 @@
 :root {
-  --bg: #e9e7e2;
-  --ink: #14171c;
-  --card: #ffffff;
-  --orange: #ff5a00;
-  --muted: #5b616b;
+  --concrete: #eceae5;
+  --concrete-dark: #dedbd3;
+  --near-black: #121316;
+  --maple: #c89d68;
+  --maple-light: #ecd5ba;
+  --orange: #ff5500;
+  --orange-hover: #e04b00;
+
+  --beginner: #15803d;
+  --intermediate: #0284c7;
+  --advanced: #b91c1c;
 
   --font-heading: "Oswald", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
-  background: var(--bg);
-  color: var(--ink);
+  background-color: var(--concrete);
+  color: #1a1b1e;
   font-family: var(--font-body);
+  margin: 0;
 }
