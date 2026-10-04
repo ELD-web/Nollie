@@ -28,3 +28,69 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
+/*Navbar*/
+.site-header {
+  background-color: var(--near-black);
+  border-top: 3px solid var(--maple);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #d6d3cc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links a.active {
+  background-color: #ffffff;
+  color: var(--near-black);
+}
+
+.tracker-counter {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: 1px solid #3a3c42;
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+}
+
+.tracker-counter span {
+  color: var(--orange);
+}
