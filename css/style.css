@@ -21,3 +21,10 @@ body {
   font-family: var(--font-body);
   margin: 0;
 }
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
