@@ -6,7 +6,7 @@ A fingerboard website where visitors can browse tricks, watch tutorials, and tra
 [/] Repo created and deployed on GitHub Pages
 [/] Shared styling (colors, fonts) and navbar
 [/] Trick list finalized: 31 flatground tricks, 4 stances
-[/] Video links for beginner tricks (5 of 31)
+[/] Video links for beginner tricks (5 of 28)
 [ ] Home page
 [ ] Tricks page with search and filter
 [ ] Tutorials page
