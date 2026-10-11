@@ -623,3 +623,247 @@ h1, h2, h3 {
   accent-color: var(--orange);
   cursor: pointer;
 }
+
+.reset-btn {
+  margin-left: auto;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background-color: #fef2f2;
+  color: var(--advanced);
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: var(--advanced);
+  color: #ffffff;
+}
+
+/*About page*/
+.about-section {
+  padding-bottom: 4rem;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.info-card {
+  background-color: #ffffff;
+  border: 2px solid var(--near-black);
+  box-shadow: 4px 4px 0 var(--near-black);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.info-card h2 {
+  font-size: 1.6rem;
+  margin: 0 0 0.6rem;
+}
+.info-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4a4d54;
+}
+
+.credit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tag {
+  display: inline-block;
+  background-color: var(--near-black);
+  color: var(--orange);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+.spec-rows {
+  margin: 1rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--concrete-dark);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.75rem;
+}
+.spec-rows div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.3rem 0;
+}
+.spec-rows dt {
+  color: #6b6e75;
+}
+.spec-rows dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.credit-list li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 1.1rem;
+  font-size: 0.85rem;
+  color: #4a4d54;
+}
+.credit-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--orange);
+}
+.credit-list strong {
+  color: var(--near-black);
+}
+.credit-note {
+  font-size: 0.8rem !important;
+  margin: 1rem 0 0;
+}
+
+/*Contact form*/
+.form-card {
+  max-width: 520px;
+  margin: 1.5rem auto 0;
+}
+.form-field {
+  margin-bottom: 1rem;
+}
+.form-field label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b6e75;
+  margin-bottom: 0.4rem;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 8px;
+  background-color: #f7f5f0;
+}
+.form-field .invalid {
+  border-color: var(--advanced);
+  background-color: #fef2f2;
+}
+.error {
+  display: block;
+  color: var(--advanced);
+  font-size: 0.78rem;
+  margin-top: 0.3rem;
+}
+.form-card .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.form-success {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background-color: #ecfdf5;
+  color: var(--beginner);
+  font-size: 0.9rem;
+}
+
+/*intro and deck anatomy*/
+.about-intro {
+  max-width: 720px;
+}
+.about-intro p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4a4d54;
+  margin: 0 0 1rem;
+}
+.why-box {
+  max-width: 720px;
+  background-color: #ffffff;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-top: 1.2rem;
+}
+.why-box h3 {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  margin: 0 0 0.4rem;
+}
+.why-box p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #4a4d54;
+  margin: 0;
+}
+.anatomy-section {
+  padding: 1rem 0 1.5rem;
+}
+.anatomy-card {
+  background-color: #ffffff;
+  border: 2px solid var(--near-black);
+  box-shadow: 4px 4px 0 var(--near-black);
+  border-radius: 12px;
+  padding: 1.8rem;
+}
+.anatomy-card h2 {
+  font-size: 1.8rem;
+  margin: 0 0 0.4rem;
+}
+.anatomy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.anatomy-grid img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.parts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.parts-list li {
+  background-color: #f7f5f0;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+}
+.parts-list strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+.parts-list span {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #4a4d54;
+}

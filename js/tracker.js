@@ -54,6 +54,8 @@ function updateProgress() {
   percentText.textContent = percent + "%";
   progressText.textContent = done + " of " + total + " stances landed";
   progressFill.style.width = percent + "%";
+
+  updateNavbarCounter();
 }
 
 // One listener on the whole list catches every checkbox click
@@ -72,3 +74,16 @@ list.addEventListener("change", function (event) {
 
 list.innerHTML = tricks.map(createRow).join("");
 updateProgress();
+
+// Reset button: clear all saved progress after the user confirms
+const resetBtn = document.getElementById("reset-btn");
+
+resetBtn.addEventListener("click", function () {
+  const sure = confirm("Reset all your progress? This can't be undone.");
+  if (!sure) return;
+
+  progress = {};
+  saveProgress();
+  list.innerHTML = tricks.map(createRow).join("");
+  updateProgress();
+});

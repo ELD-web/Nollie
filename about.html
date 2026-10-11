@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Nollie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOLLIE</a>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tricks.html">Tricks</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+
+    <a href="tracker.html" class="tracker-counter">TRACKER: <span id="tracker-count">0/100</span></a>
+  </nav>
+</header>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="section-label">Culture &amp; craft</p>
+      <h1>The Craft of Fingerboarding</h1>
+
+      <div class="about-intro">
+        <p>Fingerboarding began in the late 1980s as crude plastic keychains and homemade wooden decks crafted by skateboarders stuck inside on rainy days. Over four decades, it evolved into a worldwide subculture and specialized engineering artform.</p>
+        <p>Today's fingerboards mirror full-scale skateboards down to the millimeter: real 5-ply maple decks pressed in molds, miniature aluminum trucks with responsive urethane bushings, and tiny ball-bearing wheels made from skateboard wheel urethane.</p>
+      </div>
+
+  <section class="container anatomy-section">
+    <div class="anatomy-card">
+      <p class="section-label">Hardware breakdown</p>
+      <h2>Fingerboard Deck Anatomy</h2>
+      <p class="section-intro">Understanding the components that make modern fingerboards perform like real skateboards.</p>
+
+      <div class="anatomy-grid">
+        <img src="js/Fingerboard anatomy.jpg" alt="Fingerboard deck, grip tape, trucks, wheels, and tools laid out on a table">
+
+        <ul class="parts-list">
+          <li><strong>1. 5-Ply Maple Deck</strong><span>Pressed maple veneer with a medium concave and kicked nose and tail (typically 32mm to 34mm wide).</span></li>
+          <li><strong>2. Foam Grip Tape</strong><span>Thin, soft adhesive foam that gives your fingers grip without sandpaper wearing them down.</span></li>
+          <li><strong>3. Trucks</strong><span>Miniature trucks with bushings that let the board turn and carve, and give it a realistic pop.</span></li>
+          <li><strong>4. Urethane Wheels</strong><span>Small urethane wheels with micro-bearings so the board rolls smoothly.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container about-section">
+        <div class="about-grid">
+      <article class="info-card spec-card">
+        <span class="tag">School final project</span>
+        <h2>Project Specifications</h2>
+        <p>"Nollie" is a front-end web development final project. It demonstrates responsive design, form validation, and saving progress in the browser without a backend.</p>
+        <dl class="spec-rows">
+          <div><dt>Category:</dt><dd>Education / E-Learning</dd></div>
+          <div><dt>Markup:</dt><dd>HTML5</dd></div>
+          <div><dt>Styling:</dt><dd>CSS3</dd></div>
+          <div><dt>Scripting:</dt><dd>Vanilla JavaScript</dd></div>
+          <div><dt>Persistence:</dt><dd>Local Storage</dd></div>
+          <div><dt>Trick catalog:</dt><dd>25 tricks · 100 stances</dd></div>
+        </dl>
+      </article>
+
+      <article class="info-card">
+        <p class="section-label">Community acknowledgements</p>
+        <h2>Video Tutorial Credits</h2>
+        <p>Every tutorial belongs to its creator. Thank you to the fingerboarders who made them:</p>
+        <ul class="credit-list" id="credit-list"></ul>
+        <p class="credit-note">The trick list is based on the Wood Club Fingerboarding trick list sheet.</p>
+      </article>
+    </div>
+    
+        <article class="info-card form-card">
+      <p class="section-label">Get in touch</p>
+      <h2>Contact &amp; Feedback</h2>
+      <p>Have a tip, a correction, or a trick to suggest? Send a note below.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera">
+          <small class="error" id="name-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="email" placeholder="e.g. alex@example.com">
+          <small class="error" id="email-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="topic">Topic *</label>
+          <select id="topic" name="topic">
+            <option value="">Choose a topic</option>
+            <option value="feedback">General feedback</option>
+            <option value="correction">Trick correction</option>
+            <option value="suggestion">Trick suggestion</option>
+            <option value="bug">Report a problem</option>
+          </select>
+          <small class="error" id="topic-error"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message * (at least 10 characters)</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+          <small class="error" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send feedback</button>
+        <p class="form-success" id="form-success" hidden>Thanks! Your message was received.</p>
+      </form>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">NOLLIE</a>
+      <p>A fingerboard trick library with video tutorials and a 4-stance progress tracker.</p>
+    </div>
+
+    <div>
+      <h4>Site navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tricks.html">Tricks</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Trick categories</h4>
+      <ul>
+        <li>Basics</li>
+        <li>Shove-its &amp; Spins</li>
+        <li>Kickflips</li>
+        <li>Heelflips</li>
+        <li>Advanced Flips</li>
+      </ul>
+    </div>
+        <div>
+      <h4>Quick track</h4>
+      <a href="tracker.html" class="btn btn-primary footer-btn">Check progress</a>
+      <p class="footer-note">25 tricks across 4 stances, saved in your browser.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nollie. School final project.</p>
+      <p>HTML &middot; CSS &middot; JavaScript &middot; Local Storage</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/tricks-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/about.js"></script>
+
+</body>
+</html>
