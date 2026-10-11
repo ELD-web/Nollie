@@ -34,7 +34,23 @@
   </section>
 
   <section class="container tricks-section">
-    <div class="card-grid" id="trick-grid"></div>
+     <div class="filter-panel">
+    <input type="search" id="search" class="search-box" placeholder="Search by trick name, e.g. Kickflip" aria-label="Search tricks">
+
+    <div class="filter-row">
+      <span class="filter-label">Category:</span>
+      <div class="pill-group" id="category-filters"></div>
+    </div>
+
+    <p class="result-count" id="result-count"></p>
+        <div class="filter-row">
+            <span class="filter-label">Difficulty:</span>
+        <div class="pill-group" id="difficulty-filters"></div>
+        </div>
+    </div>
+
+  <div class="card-grid" id="trick-grid"></div>
+  <p class="no-results" id="no-results" hidden>No tricks match your search. Try a different word or category.</p>
   </section>
 </main>
 
