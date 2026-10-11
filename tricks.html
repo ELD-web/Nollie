@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nollie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">NOLLIE</a>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tricks.html" class="active">Tricks</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <a href="tracker.html" class="tracker-counter">TRACKER: <span id="tracker-count">0/100</span></a>
+  </nav>
+</header>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="section-label">Trick encyclopedia</p>
+      <h1>Flatground Tricks Library</h1>
+      <p class="section-intro">Browse all 25 flatground fingerboard tricks and watch a tutorial for each one.</p>
+    </div>
+  </section>
+
+  <section class="container tricks-section">
+    <div class="card-grid" id="trick-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">NOLLIE</a>
+      <p>A fingerboard trick library with video tutorials and a 4-stance progress tracker.</p>
+    </div>
+
+    <div>
+      <h4>Site navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tricks.html" class="active">Tricks</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Trick categories</h4>
+      <ul>
+        <li>Basics</li>
+        <li>Shove-its &amp; Spins</li>
+        <li>Kickflips</li>
+        <li>Heelflips</li>
+        <li>Advanced Flips</li>
+      </ul>
+    </div>
+        <div>
+      <h4>Quick track</h4>
+      <a href="tracker.html" class="btn btn-primary footer-btn">Check progress</a>
+      <p class="footer-note">25 tricks across 4 stances, saved in your browser.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nollie. School final project.</p>
+      <p>HTML &middot; CSS &middot; JavaScript &middot; Local Storage</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/tricks-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/tricks.js"></script>
+
+</body>
+</html>
