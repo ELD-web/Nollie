@@ -249,3 +249,136 @@ h1, h2, h3 {
   color: var(--near-black);
   text-decoration: none;
 }
+
+/*How it works*/
+.how {
+  padding: 3rem 0 4rem;
+  text-align: center;
+  background-color: var(--concrete-dark);
+  border-top: 1px solid #cfcbc2;
+}
+.how h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  text-align: left;
+}
+.step-card {
+  background-color: #ffffff;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.step-number {
+  display: inline-block;
+  background-color: var(--near-black);
+  color: var(--orange);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+.step-card h3 {
+  font-size: 1.3rem;
+  margin: 0.8rem 0 0.4rem;
+}
+.step-card p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #4a4d54;
+  margin: 0;
+}
+
+/*Call-to-action banner*/
+.cta-banner {
+  background-color: var(--near-black);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.cta-banner h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.3rem;
+}
+.cta-banner p {
+  font-size: 0.85rem;
+  color: #b5b3ad;
+  margin: 0;
+}
+
+/*Footer*/
+.site-footer {
+  background-color: var(--near-black);
+  color: #b5b3ad;
+  padding: 3rem 0 1.5rem;
+  font-size: 0.85rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 2rem;
+}
+.footer-grid .footer-logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-grid p {
+  max-width: 320px;
+  line-height: 1.6;
+  margin: 0.6rem 0 0;
+}
+.footer-grid h4 {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.8rem;
+}
+.footer-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-grid li {
+  margin-bottom: 0.5rem;
+}
+.footer-grid a {
+  color: #b5b3ad;
+  text-decoration: none;
+}
+.footer-grid a:hover {
+  color: #ffffff;
+}
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #2a2c31;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+.footer-grid .btn-primary {
+  color: #ffffff;
+}
+.footer-btn {
+  margin-top: 0.2rem;
+}
