@@ -470,3 +470,156 @@ h1, h2, h3 {
   color: #6b6e75;
   padding: 2rem 0;
 }
+
+/*Tutorials page*/
+.select-box {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.video-card {
+  background-color: #ffffff;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.video-card:hover {
+  border-color: var(--orange);
+}
+.thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background-color: var(--near-black);
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+.video-info {
+  padding: 1rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.video-info h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0.3rem;
+}
+.credit {
+  font-size: 0.75rem;
+  color: #6b6e75;
+  margin: 0 0 0.8rem;
+}
+
+/*Tracker*/
+.progress-panel {
+  background-color: #ffffff;
+  border: 2px solid var(--near-black);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--near-black);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.progress-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+.progress-percent {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.progress-text {
+  font-size: 0.85rem;
+  color: #6b6e75;
+}
+.progress-bar {
+  height: 14px;
+  background-color: var(--concrete-dark);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background-color: var(--orange);
+  transition: width 0.2s ease;
+}
+.tracker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.tracker-row {
+  background-color: #ffffff;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 12px;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tracker-info {
+  min-width: 200px;
+}
+.tracker-info .card-top {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.tracker-info h3 {
+  font-size: 1.2rem;
+  margin: 0.2rem 0 0;
+}
+.stance-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.stance-box {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 8px;
+  background-color: #f7f5f0;
+  cursor: pointer;
+}
+.stance-box:hover {
+  border-color: var(--near-black);
+}
+.stance-box:has(input:checked) {
+  background-color: var(--near-black);
+  border-color: var(--near-black);
+  color: #ffffff;
+}
+.stance-box input {
+  accent-color: var(--orange);
+  cursor: pointer;
+}
