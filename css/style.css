@@ -167,3 +167,85 @@ h1, h2, h3 {
   letter-spacing: 0.05em;
   color: #6b6e75;
 }
+
+/*Featured tricks*/
+.featured {
+  padding: 3rem 0 4rem;
+}
+.section-label {
+  color: var(--orange);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.3rem;
+}
+.featured h2 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+}
+.section-intro {
+  color: #4a4d54;
+  margin: 0 0 1.8rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+.trick-card {
+  background-color: #ffffff;
+  border: 1px solid var(--concrete-dark);
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.trick-card:hover {
+  border-color: var(--orange);
+}
+.trick-card h3 {
+  font-size: 1.4rem;
+  margin: 0.6rem 0 0.4rem;
+}
+.trick-card p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #4a4d54;
+  margin: 0 0 1rem;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-category {
+  font-size: 0.7rem;
+  color: #6b6e75;
+}
+.card-link {
+  margin-top: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--orange);
+  text-decoration: none;
+}
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
+.badge-beginner {
+  background-color: #ecfdf5;
+  color: var(--beginner);
+  border: 1px solid #a7f3d0;
+}
+.view-all {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--near-black);
+  text-decoration: none;
+}
