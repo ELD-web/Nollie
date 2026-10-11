@@ -94,3 +94,76 @@ h1, h2, h3 {
 .tracker-counter span {
   color: var(--orange);
 }
+
+/*Shared layout*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: var(--orange);
+  color: #ffffff;
+  box-shadow: 0 4px 0 #b33c00;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--near-black);
+  border: 2px solid var(--near-black);
+  box-shadow: 0 4px 0 var(--near-black);
+}
+
+/*Hero*/
+.hero {
+  padding: 4rem 0 3rem;
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+.hero h1 span {
+  color: var(--orange);
+}
+.hero p {
+  max-width: 480px;
+  line-height: 1.6;
+  color: #4a4d54;
+  margin: 0 0 1.5rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--concrete-dark);
+}
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.stat-number.orange {
+  color: var(--orange);
+}
+.stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b6e75;
+}
