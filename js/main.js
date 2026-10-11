@@ -15,3 +15,14 @@ function updateNavbarCounter() {
 }
 
 updateNavbarCounter();
+
+// Mobile menu
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.querySelector(".nav-links");
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", function () {
+    const isOpen = navMenu.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+}
