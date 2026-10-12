@@ -74,4 +74,4 @@ No installation is needed. Download or clone the repository and open `index.html
 - hunkfb
 - weakfingers
 
-**Images:** the deck images on the Home page and the parts photo on the About page.
+**Images:** the deck images on the Home page and the parts photo on the About page are the developers set ups.
