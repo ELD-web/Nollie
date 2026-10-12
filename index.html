@@ -27,27 +27,39 @@
 </header>
   <main>
   <section class="hero">
-    <div class="container">
-      <h1>Master the flatground. <span>Every stance. Every flip.</span></h1>
-      <p>A website where visitors can browse fingerboard tricks, watch tutorials, and track the tricks they have landed.</p>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Master the flatground. <span>Every stance. Every flip.</span></h1>
+        <p>A website where visitors can browse fingerboard tricks, watch tutorials, and track the tricks they have landed.</p>
 
-      <div class="hero-buttons">
-        <a href="tricks.html" class="btn btn-primary">Browse Tricks</a>
-        <a href="tracker.html" class="btn btn-secondary">Check Tracker</a>
+        <div class="hero-buttons">
+          <a href="tricks.html" class="btn btn-primary">Browse Tricks</a>
+          <a href="tracker.html" class="btn btn-secondary">Check Tracker</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-number">25</div>
+            <div class="stat-label">Flatground tricks</div>
+          </div>
+          <div>
+            <div class="stat-number">4</div>
+            <div class="stat-label">Stances each</div>
+          </div>
+          <div>
+            <div class="stat-number orange">100%</div>
+            <div class="stat-label">Saved in your browser</div>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-stats">
-        <div>
-          <div class="stat-number">25</div>
-          <div class="stat-label">Flatground tricks</div>
+      <div class="deck-card">
+        <div class="deck-stage">
+          <img id="deck-image" src="Vertical Deck.jpg" alt="Fingerboard deck with a samurai skull design, shown horizontally">
         </div>
-        <div>
-          <div class="stat-number">4</div>
-          <div class="stat-label">Stances each</div>
-        </div>
-        <div>
-          <div class="stat-number orange">100%</div>
-          <div class="stat-label">Saved in your browser</div>
+        <div class="deck-footer">
+          <span id="deck-caption">Horizontal view</span>
+          <button type="button" class="flip-btn" id="flip-btn">Flip deck ↻</button>
         </div>
       </div>
     </div>
@@ -185,5 +197,8 @@
 </footer>
 <script src="js/tricks-data.js"></script>
 <script src="js/main.js"></script>
+<script src="js/tricks-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

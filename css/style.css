@@ -190,7 +190,7 @@ h1, h2, h3 {
 }
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.2rem;
 }
 .trick-card {
@@ -928,5 +928,67 @@ h1, h2, h3 {
   }
   .footer-bottom {
     flex-direction: column;
+  }
+}
+
+/*Hero deck card*/
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+.deck-card {
+  background-color: #ffffff;
+  border: 2px solid var(--near-black);
+  box-shadow: 4px 4px 0 var(--near-black);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+.deck-stage {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f4f4f2;
+}
+.deck-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.deck-stage img.swapping {
+  transform: rotate(90deg) scale(0.85);
+  opacity: 0;
+}
+.deck-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #4a4d54;
+}
+.flip-btn {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--orange);
+  cursor: pointer;
+}
+.flip-btn:hover {
+  background-color: var(--orange);
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 }
