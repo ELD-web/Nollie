@@ -24,7 +24,7 @@ function createCard(trick) {
     </article>`;
 }
 
-// Show only the tricks that match the search, category, and difficulty
+//search, category, and difficulty
 function showTricks() {
   const filtered = tricks.filter(function (trick) {
     const matchesSearch = trick.name.toLowerCase().includes(searchText.toLowerCase());
@@ -38,8 +38,6 @@ function showTricks() {
   noResults.hidden = filtered.length > 0;
 }
 
-// Makes a row of filter buttons inside a container.
-// onPick runs with the button's name when it is clicked.
 function createFilterButtons(container, names, onPick) {
   names.forEach(function (name) {
     const button = document.createElement("button");
