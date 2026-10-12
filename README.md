@@ -1,8 +1,8 @@
 # Nollie
 
-**Student:** [Your Full Name]
+**Student:** Ethan Leigh G. Dela Torre
 **Website category:** Education / E-Learning
-**Live site:** https://[your-username].github.io/nollie/
+**Live site:** https://eld-web.github.io/nollie/
 
 ## Project description
 Nollie is a fingerboard trick library and progress tracker. Visitors can browse 25 flatground fingerboard tricks, watch a video tutorial for each one, and track which tricks they have landed in four stances (Regular/Goofy, Fakie, Nollie, and Switch). Progress is saved in the visitor's own browser, so no account or database is needed.
