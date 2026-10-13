@@ -8,24 +8,15 @@
 Nollie is a fingerboard trick library and progress tracker. Visitors can browse 25 flatground fingerboard tricks, watch a video tutorial for each one, and track which tricks they have landed in four stances (Regular/Goofy, Fakie, Nollie, and Switch). Progress is saved in the visitor's own browser, so no account or database is needed.
 
 ## Main features
-- **Trick library** with 25 tricks, each with a category, difficulty badge, and short description
-- **Search and filters** by trick name, category, and difficulty
-- **Video tutorials page** with a thumbnail, creator credit, and a link to each YouTube tutorial
-- **Progress tracker** with a checkbox for each trick in each of the 4 stances (100 in total), an overall progress bar, and a reset button
-- **Saved progress** using Local Storage, so ticks stay after refreshing or closing the tab
-- **Live navbar counter** that shows the number of landed stances on every page
-- **Contact and feedback form** with validation and error messages (the form does not send data anywhere, since the site has no backend)
-- **Interactive deck card** on the Home page with a "Flip deck" button
-- **Responsive layout** with a mobile menu, tested at phone, tablet, and desktop widths
-
-## Pages
-| Page | File |
-|---|---|
-| Home | `index.html` |
-| Tricks | `tricks.html` |
-| Tutorials | `tutorials.html` |
-| Tracker | `tracker.html` |
-| About | `about.html` |
+- Trick library with 25 tricks, each with a category, difficulty badge, and short description
+- Search and filters by trick name, category, and difficulty
+- Video tutorials page with a thumbnail, creator credit, and a link to each YouTube tutorial
+- Progress tracker with a checkbox for each trick in each of the 4 stances (100 in total), an overall progress bar, and a reset button
+- Saved progress using Local Storage, so ticks stay after refreshing or closing the tab
+- Live navbar counter that shows the number of landed stances on every page
+- Contact and feedback form with validation and error messages (the form does not send data anywhere, since the site has no backend)
+- Interactive deck card on the Home page with a "Flip deck" button
+- Responsive layout with a mobile menu, tested at phone, tablet, and desktop widths
 
 ## Technologies used
 - HTML5
