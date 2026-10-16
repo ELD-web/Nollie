@@ -26,36 +26,12 @@ Nollie is a fingerboard trick library and progress tracker. Visitors can browse 
 - Google Fonts (Oswald and Plus Jakarta Sans)
 - Hosted on GitHub Pages
 
-## Project structure
-```
-nollie/
-├── index.html
-├── tricks.html
-├── tutorials.html
-├── tracker.html
-├── about.html
-├── css/style.css
-├── js/
-│   ├── tricks-data.js   (all trick data, shared by the pages)
-│   ├── main.js          (mobile menu and navbar counter)
-│   ├── home.js          (flip deck button)
-│   ├── tricks.js        (trick cards, search, filters)
-│   ├── tutorials.js     (tutorial cards, search, filter)
-│   ├── tracker.js       (checkboxes, progress, Local Storage, reset)
-│   └── about.js         (credits list and form validation)
-└── images/
-```
-
-## How to run
-No installation is needed. Download or clone the repository and open `index.html` in a browser, or visit the live site above.
 
 ## Notes
 - Progress is saved per browser and per address. It will not carry over to another browser or device, and clearing browser data removes it.
 - Video thumbnails and tutorial links need an internet connection.
 - The Shove-it and Pop Shove-it tricks share one tutorial video, and so do the Kickflip and Double Kickflip.
 
-## Credits
-**Trick list:** based on the Wood Club Fingerboarding trick list sheet.
 
 **Video tutorials:** every tutorial belongs to its creator. Thank you to:
 - WoodClub Fingerboarding
